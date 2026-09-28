@@ -1,0 +1,43 @@
+# Local environments and generated packages
+/软件/*
+!/软件/.gitkeep
+.venv/
+venv/
+.idea/
+.vscode/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+build/
+dist/
+*.egg-info/
+
+# Field settings, images, output and credentials
+config/
+data/
+images/
+results/
+grading_results/
+online_results/
+.env
+.env.*
+*.log
+*.sqlite*
+*.db
+
+# Model binaries are supplied by the private GitHub Release
+*.onnx
+*.pt
+*.pth
+*.zip
+
+# Native build intermediates; vendor native/lib/*.lib stays tracked
+*.obj
+*.exp
+*.pdb
+**/camera_driver/*.lib
+**/tests/native_test/
+**/tests/native_cl/
+**/tests/fixtures/**/*.jpg
+**/tests/fixtures/**/*.jpeg
+**/tests/fixtures/**/*.png

@@ -1,0 +1,30 @@
+{
+  "asset_name": "model-assets-20260923.zip",
+  "archive_sha256": "f8ef1f168d5e3a8f14a27f4fa313626a44b1beca5c38c0db5fd7a505eb3b4781",
+  "files": {
+    "best.onnx": {
+      "sha256": "dca220083992d8a6a8535b2b36e71cd48fbb60c54af2160e9fab3db43e28c3ff",
+      "bytes": 104308295
+    },
+    "best.pt": {
+      "sha256": "fbe7ffeacc93b83c2d3c57fc39b5759367871f2773e5db3cbbf3b5fa7b59dcbb",
+      "bytes": 104499799
+    },
+    "grading/hongxiang.onnx": {
+      "sha256": "47b39da95041c8475c73e24cb0d7a86778989c786676761db109e765ee4da49e",
+      "bytes": 93966625
+    },
+    "grading/ouxiang.onnx": {
+      "sha256": "f29a4ee6a798b498b60b2e617cc8a330c88833b0b791717586c314f510b786ad",
+      "bytes": 93983017
+    },
+    "grading/semu.onnx": {
+      "sha256": "941a5ece26194a05c68266bfec34bd572d5edfd1c43b65c8bb145817cd8f4cc8",
+      "bytes": 93966625
+    },
+    "grading/shanhetao.onnx": {
+      "sha256": "0d9b4e2c5c09591137e7cdb51a93411e7176158e5e50c9150c6b38218f8efd5a",
+      "bytes": 93983017
+    }
+  }
+}

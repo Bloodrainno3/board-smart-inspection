@@ -1,0 +1,366 @@
+{
+  "version": 1,
+  "model_name": "resnet50.tv_in1k",
+  "input_size": 224,
+  "preprocessing": {
+    "resize": "PIL BILINEAR full image, no crop",
+    "color": "RGB",
+    "divisor": 255,
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "materials": {
+    "hongxiang": {
+      "name": "红橡",
+      "file": "hongxiang.onnx",
+      "classes": [
+        "qian",
+        "shen"
+      ],
+      "labels": [
+        "浅色",
+        "深色"
+      ],
+      "checkpoint_sha256": "35cfdf6c7ed0a1b4dd73de53af4240e044c9c79ecaf56e600c43263a2544ef37",
+      "onnx_sha256": "47b39da95041c8475c73e24cb0d7a86778989c786676761db109e765ee4da49e",
+      "epoch": 40,
+      "training_validation_metrics": {
+        "accuracy": 0.9970059880239521,
+        "macro_f1": 0.9967176060144465,
+        "recall": [
+          0.9976905311778291,
+          0.9957446808510638
+        ],
+        "confusion_matrix": [
+          [
+            432,
+            1
+          ],
+          [
+            1,
+            234
+          ]
+        ]
+      },
+      "export_validation": [
+        {
+          "image": "例图\\山核桃\\6e16fc5c528cf26787c8204132eff729.jpg",
+          "max_probability_error": 3.092281986027956e-10,
+          "class": "shen"
+        },
+        {
+          "image": "例图\\山核桃\\e40fc0748521c82a3467088964375803.jpg",
+          "max_probability_error": 6.821210263296962e-12,
+          "class": "shen"
+        },
+        {
+          "image": "例图\\欧像\\16b3ca3b7bacaf422ae1830b93e98777.jpg",
+          "max_probability_error": 0.0,
+          "class": "shen"
+        },
+        {
+          "image": "例图\\欧像\\8e712a89ec0748bb19dd8186119ceafd.jpg",
+          "max_probability_error": 1.127773430198431e-10,
+          "class": "shen"
+        },
+        {
+          "image": "例图\\欧像\\a1c99dadfbace265913bed181db82332.jpg",
+          "max_probability_error": 1.6220680939919851e-19,
+          "class": "shen"
+        },
+        {
+          "image": "例图\\欧像\\b76e249b15725f01701ba9e71d8bef83.jpg",
+          "max_probability_error": 5.286437954055145e-12,
+          "class": "shen"
+        },
+        {
+          "image": "例图\\色木\\2ded4a5494bc9b9d602ca359ea7f5d48.jpg",
+          "max_probability_error": 2.3418766925686896e-17,
+          "class": "shen"
+        },
+        {
+          "image": "例图\\色木\\4c1f3e2e8a3ee19f9789acb6b4f491be.jpg",
+          "max_probability_error": 1.3010426069826053e-18,
+          "class": "shen"
+        }
+      ]
+    },
+    "ouxiang": {
+      "name": "欧橡",
+      "file": "ouxiang.onnx",
+      "classes": [
+        "qian",
+        "shen",
+        "shuangse",
+        "zhong"
+      ],
+      "labels": [
+        "浅色",
+        "深色",
+        "双色",
+        "中色"
+      ],
+      "checkpoint_sha256": "f4b716125a3a8d07bcf2b5948c5c74fb9f57177650905cb8aacea80a09ebe5a0",
+      "onnx_sha256": "f29a4ee6a798b498b60b2e617cc8a330c88833b0b791717586c314f510b786ad",
+      "epoch": 46,
+      "training_validation_metrics": {
+        "accuracy": 0.966041108132261,
+        "macro_f1": 0.9633103303861621,
+        "recall": [
+          0.9686684073107049,
+          0.9246575342465754,
+          0.9810126582278481,
+          0.9671532846715328
+        ],
+        "confusion_matrix": [
+          [
+            371,
+            0,
+            5,
+            7
+          ],
+          [
+            4,
+            135,
+            0,
+            7
+          ],
+          [
+            4,
+            0,
+            310,
+            2
+          ],
+          [
+            2,
+            3,
+            4,
+            265
+          ]
+        ]
+      },
+      "export_validation": [
+        {
+          "image": "例图\\山核桃\\6e16fc5c528cf26787c8204132eff729.jpg",
+          "max_probability_error": 3.092281986027956e-10,
+          "class": "zhong"
+        },
+        {
+          "image": "例图\\山核桃\\e40fc0748521c82a3467088964375803.jpg",
+          "max_probability_error": 1.1920928955078125e-07,
+          "class": "zhong"
+        },
+        {
+          "image": "例图\\欧像\\16b3ca3b7bacaf422ae1830b93e98777.jpg",
+          "max_probability_error": 4.206412995699793e-12,
+          "class": "zhong"
+        },
+        {
+          "image": "例图\\欧像\\8e712a89ec0748bb19dd8186119ceafd.jpg",
+          "max_probability_error": 1.2660166248679161e-09,
+          "class": "zhong"
+        },
+        {
+          "image": "例图\\欧像\\a1c99dadfbace265913bed181db82332.jpg",
+          "max_probability_error": 1.5347723092418164e-12,
+          "class": "zhong"
+        },
+        {
+          "image": "例图\\欧像\\b76e249b15725f01701ba9e71d8bef83.jpg",
+          "max_probability_error": 4.190951585769653e-08,
+          "class": "zhong"
+        },
+        {
+          "image": "例图\\色木\\2ded4a5494bc9b9d602ca359ea7f5d48.jpg",
+          "max_probability_error": 2.7284841053187847e-12,
+          "class": "zhong"
+        },
+        {
+          "image": "例图\\色木\\4c1f3e2e8a3ee19f9789acb6b4f491be.jpg",
+          "max_probability_error": 3.481659405224491e-13,
+          "class": "zhong"
+        }
+      ]
+    },
+    "semu": {
+      "name": "色木",
+      "file": "semu.onnx",
+      "classes": [
+        "semu_abcd_cn",
+        "semu_e_cn"
+      ],
+      "labels": [
+        "ABCD类",
+        "E类"
+      ],
+      "checkpoint_sha256": "799066943a149d4557ab4faf8db89690bc0696b81b264e0aa8ea2e5231bbbfc7",
+      "onnx_sha256": "941a5ece26194a05c68266bfec34bd572d5edfd1c43b65c8bb145817cd8f4cc8",
+      "epoch": 2,
+      "training_validation_metrics": {
+        "accuracy": 0.9592476489028213,
+        "macro_f1": 0.9017880402605092,
+        "recall": [
+          0.9717314487632509,
+          0.8611111111111112
+        ],
+        "confusion_matrix": [
+          [
+            275,
+            8
+          ],
+          [
+            5,
+            31
+          ]
+        ]
+      },
+      "export_validation": [
+        {
+          "image": "例图\\山核桃\\6e16fc5c528cf26787c8204132eff729.jpg",
+          "max_probability_error": 6.984919309616089e-10,
+          "class": "semu_abcd_cn"
+        },
+        {
+          "image": "例图\\山核桃\\e40fc0748521c82a3467088964375803.jpg",
+          "max_probability_error": 3.4924596548080444e-10,
+          "class": "semu_abcd_cn"
+        },
+        {
+          "image": "例图\\欧像\\16b3ca3b7bacaf422ae1830b93e98777.jpg",
+          "max_probability_error": 5.960464477539063e-08,
+          "class": "semu_abcd_cn"
+        },
+        {
+          "image": "例图\\欧像\\8e712a89ec0748bb19dd8186119ceafd.jpg",
+          "max_probability_error": 5.587935447692871e-09,
+          "class": "semu_abcd_cn"
+        },
+        {
+          "image": "例图\\欧像\\a1c99dadfbace265913bed181db82332.jpg",
+          "max_probability_error": 2.2351741790771484e-08,
+          "class": "semu_abcd_cn"
+        },
+        {
+          "image": "例图\\欧像\\b76e249b15725f01701ba9e71d8bef83.jpg",
+          "max_probability_error": 0.0,
+          "class": "semu_abcd_cn"
+        },
+        {
+          "image": "例图\\色木\\2ded4a5494bc9b9d602ca359ea7f5d48.jpg",
+          "max_probability_error": 1.1920928955078125e-07,
+          "class": "semu_abcd_cn"
+        },
+        {
+          "image": "例图\\色木\\4c1f3e2e8a3ee19f9789acb6b4f491be.jpg",
+          "max_probability_error": 1.341104507446289e-07,
+          "class": "semu_e_cn"
+        }
+      ]
+    },
+    "shanhetao": {
+      "name": "山核桃",
+      "file": "shanhetao.onnx",
+      "classes": [
+        "bai",
+        "qian",
+        "shen",
+        "zhong"
+      ],
+      "labels": [
+        "白色",
+        "浅色",
+        "深色",
+        "中色"
+      ],
+      "checkpoint_sha256": "a49a2557cb49ca1c570d903ee1621ed7fcfa8584a518fa0d382eea17d635c8b7",
+      "onnx_sha256": "0d9b4e2c5c09591137e7cdb51a93411e7176158e5e50c9150c6b38218f8efd5a",
+      "epoch": 46,
+      "training_validation_metrics": {
+        "accuracy": 0.9800747198007472,
+        "macro_f1": 0.9800087981538753,
+        "recall": [
+          0.991044776119403,
+          0.9778481012658228,
+          0.9797047970479705,
+          0.9733656174334141
+        ],
+        "confusion_matrix": [
+          [
+            332,
+            3,
+            0,
+            0
+          ],
+          [
+            2,
+            309,
+            3,
+            2
+          ],
+          [
+            2,
+            4,
+            531,
+            5
+          ],
+          [
+            1,
+            3,
+            7,
+            402
+          ]
+        ]
+      },
+      "export_validation": [
+        {
+          "image": "例图\\山核桃\\6e16fc5c528cf26787c8204132eff729.jpg",
+          "max_probability_error": 7.566995918750763e-10,
+          "class": "qian"
+        },
+        {
+          "image": "例图\\山核桃\\e40fc0748521c82a3467088964375803.jpg",
+          "max_probability_error": 7.748603820800781e-07,
+          "class": "shen"
+        },
+        {
+          "image": "例图\\欧像\\16b3ca3b7bacaf422ae1830b93e98777.jpg",
+          "max_probability_error": 4.172325134277344e-07,
+          "class": "qian"
+        },
+        {
+          "image": "例图\\欧像\\8e712a89ec0748bb19dd8186119ceafd.jpg",
+          "max_probability_error": 8.568167686462402e-08,
+          "class": "shen"
+        },
+        {
+          "image": "例图\\欧像\\a1c99dadfbace265913bed181db82332.jpg",
+          "max_probability_error": 1.7881393432617188e-06,
+          "class": "qian"
+        },
+        {
+          "image": "例图\\欧像\\b76e249b15725f01701ba9e71d8bef83.jpg",
+          "max_probability_error": 9.238719940185547e-07,
+          "class": "qian"
+        },
+        {
+          "image": "例图\\色木\\2ded4a5494bc9b9d602ca359ea7f5d48.jpg",
+          "max_probability_error": 1.9208528101444244e-09,
+          "class": "bai"
+        },
+        {
+          "image": "例图\\色木\\4c1f3e2e8a3ee19f9789acb6b4f491be.jpg",
+          "max_probability_error": 1.7171259969472885e-09,
+          "class": "bai"
+        }
+      ]
+    }
+  }
+}

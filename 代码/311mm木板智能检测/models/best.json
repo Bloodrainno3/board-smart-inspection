@@ -1,0 +1,63 @@
+{
+  "arch": "unetpp",
+  "encoder": "resnet34",
+  "target_width": 1024,
+  "tile_height": 1024,
+  "overlap": 256,
+  "threshold": 0.5,
+  "edge_margin_ratio": 0.03,
+  "normalization": {
+    "order": "RGB",
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "divisor": 255
+  },
+  "checkpoint_sha256": "fbe7ffeacc93b83c2d3c57fc39b5759367871f2773e5db3cbbf3b5fa7b59dcbb",
+  "onnx_sha256": "dca220083992d8a6a8535b2b36e71cd48fbb60c54af2160e9fab3db43e28c3ff",
+  "torch_version": "2.7.1+cpu",
+  "smp_version": "0.5.0",
+  "onnxruntime_version": "1.23.2",
+  "validation": {
+    "image": "D:\\椤圭洰\\鏉跨紳璇嗗埆\\渚嬪浘\\鑹叉湪\\2ded4a5494bc9b9d602ca359ea7f5d48.jpg",
+    "max_probability_error": 2.3283064365386963e-09,
+    "binary_agreement": 1.0,
+    "strict_state_dict": true,
+    "three_material_seam_tiles": [
+      {
+        "material": "山核桃",
+        "source": "D:\\项目\\板缝识别\\例图\\山核桃\\6e16fc5c528cf26787c8204132eff729.jpg",
+        "tile_y_scaled": 1189,
+        "normalization_exact_match": true,
+        "positive_pixels": 11595,
+        "max_probability_error": 7.331371307373047e-06,
+        "binary_agreement": 1.0
+      },
+      {
+        "material": "欧橡",
+        "source": "D:\\项目\\板缝识别\\例图\\欧像\\16b3ca3b7bacaf422ae1830b93e98777.jpg",
+        "tile_y_scaled": 2573,
+        "normalization_exact_match": true,
+        "positive_pixels": 18451,
+        "max_probability_error": 2.682209014892578e-06,
+        "binary_agreement": 1.0
+      },
+      {
+        "material": "色木",
+        "source": "D:\\项目\\板缝识别\\例图\\色木\\2ded4a5494bc9b9d602ca359ea7f5d48.jpg",
+        "tile_y_scaled": 2588,
+        "normalization_exact_match": true,
+        "positive_pixels": 3982,
+        "max_probability_error": 5.7220458984375e-06,
+        "binary_agreement": 1.0
+      }
+    ]
+  }
+}
